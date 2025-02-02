@@ -35,11 +35,11 @@ vector<vector<int>> fourSum(vector<int>&nums,int target)
                 {
                     vector<int>temp={nums[i],nums[j],nums[k],nums[l]};
                     ans.push_back(temp);
-                    while(k<l && nums[k]==nums[k+1])
+                    while(k<l && nums[k]==nums[k-1])
                     {
                         k++;
                     }
-                    while(k<l && nums[l]==nums[l-1])
+                    while(k<l && nums[l]==nums[l+1])
                     {
                         l--;
                     }
