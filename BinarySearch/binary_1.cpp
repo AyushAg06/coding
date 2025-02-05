@@ -31,3 +31,5 @@ int main()
     cout<<BinarySearch(nums,target)<<endl;
     return 0;
 }
+// time complexity: O(logn)
+// space complexity: O(1)
