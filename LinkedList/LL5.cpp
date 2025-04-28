@@ -1,7 +1,7 @@
-// Check if the element is present in the linked list or not 
 #include<bits/stdc++.h>
 using namespace std;
-class Node{
+class Node
+{
     public:
         int data;
         Node* next;
@@ -23,22 +23,11 @@ Node* ArrayToLL(vector<int>&arr)
     }
     return head;
 }
-int CheckifPresent(Node* Head,int val)
-{
-    Node* temp=Head;
-    while(temp)
-    {
-        if(temp->data==val)
-        {
-            return 1;
-        }
-        temp=temp->next;
-    }
-    return 0;
-}
 int main()
 {
     vector<int>arr={2,4,6,8};
     Node* Head=ArrayToLL(arr);
-    cout<<CheckifPresent(Head,6);
+    Node* temp=Head;
+    cout<<Head->data;
     return 0;
+}
