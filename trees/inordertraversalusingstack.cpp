@@ -16,23 +16,29 @@ vector<int>inordertraversal(node* root)
 {
     vector<int>arr;
     stack<node*>st;
-    node* dummynode=root;
+    // node* dummynode=root;
     while(true)
     {
-        if(dummynode!=NULL)
+        // if(dummynode!=NULL)
+        if(root!=NULL)
         {
-            st.push(dummynode);
-            dummynode=dummynode->left;
+            // st.push(dummynode);
+            st.push(root);
+            // dummynode=dummynode->left;
+            root=root->left;
         }
         else{
             if(st.empty()==true)
             {
                 break;
             }
-            dummynode=st.top();
+            // dummynode=st.top();
+            root=st.top();
             st.pop();
-            arr.push_back(dummynode->data);
-            dummynode=dummynode->right;
+            // arr.push_back(dummynode->data);
+            // dummynode=dummynode->right;
+            arr.push_back(root->data);
+            root=root->right;
         }
     }
     return arr;
