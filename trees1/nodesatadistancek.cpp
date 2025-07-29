@@ -11,7 +11,6 @@ public:
         left = right = nullptr;
     }
 };
-
 // Step 1: Mark parent for all nodes
 void markParent(Node* root, unordered_map<Node*, Node*>& parent_track) {
     queue<Node*> q;
