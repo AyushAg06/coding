@@ -1,4 +1,4 @@
-package coding.Queueinjava;
+// package coding.Queueinjava;
 import java.util.*;
 public class StackusingQueue 
 {
